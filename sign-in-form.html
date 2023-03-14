@@ -8,5 +8,83 @@
     <title>Sign-in Form</title>
   </head>
   <script type="text/javascript" src="/sign-in-form-script.js"></script>
-  <body></body>
+  <body>
+    <div class="body-left">
+      <div id="logo-container">
+        <h2>
+          <img src="sign-up-form_example.png" alt="Trulli" id="logo" /> RECIPE
+          GENERATOR
+        </h2>
+      </div>
+      <div id="background-credit">
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Nathan Dumlao</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/bRdRUUtbxO0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="body-right">
+      <div id="upper-text-container"></div>
+      <form action="https://httpbin.org/post" method="post">
+        <div class="form">
+          <div class="form-title"><p>Sign up here!</p></div>
+          <div class="input">
+            <label for="first_name">First Name:</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              placeholder="Jane"
+            />
+          </div>
+          <div class="input">
+            <label for="last_name">Last Name:</label>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              placeholder="Doe"
+            />
+          </div>
+          <div class="input">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="place@holder.com"
+            />
+          </div>
+          <div class="input">
+            <label for="Telephone">Telephone:</label>
+            <input
+              type="text"
+              id="telephone"
+              name="telephone"
+              placeholder="+31 6 12345678"
+            />
+          </div>
+          <div class="input">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="input">
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" id="confirm" name="confirm" required />
+          </div>
+        </div>
+        <div class="input-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
